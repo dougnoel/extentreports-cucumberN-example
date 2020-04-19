@@ -1,9 +1,9 @@
 package cucumber.examples.java.calculator;
 
-import cucumber.api.Format;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+//import io.cucumber.java .api.Format;
+//import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 import java.util.Date;
 
@@ -13,10 +13,10 @@ public class DateStepdefs {
     private String result;
     private DateCalculator calculator;
 
-    @Given("^today is (.+)$")
-    public void today_is(@Format("yyyy-MM-dd") Date date) {
-        calculator = new DateCalculator(date);
-    }
+//    @Given("^today is (.+)$")
+//    public void today_is(@Format("yyyy-MM-dd") Date date) {
+//        calculator = new DateCalculator(date);
+//    }
 
     /**
      * We don't need to use @Format here, since the date string in the step
